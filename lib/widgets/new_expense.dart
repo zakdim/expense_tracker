@@ -35,22 +35,22 @@ class _NewExpenseState extends State<NewExpense> {
             controller: _amountController,
             keyboardType: TextInputType.number,
             decoration: const InputDecoration(
+              prefixText: '\$ ',
               label: Text('Amount'),
             ),
           ),
           Row(
             children: [
               ElevatedButton(
+                onPressed: () {},
+                child: const Text('Cancel'),
+              ),
+              ElevatedButton(
                 onPressed: () {
                   print('${_titleController.text}, ${_amountController.text}');
                 },
                 child: const Text('Save Expense'),
               ),
-              const Spacer(),
-              ElevatedButton(
-                onPressed: () {},
-                child: const Text('Cancel'),
-              )
             ],
           ),
         ],
