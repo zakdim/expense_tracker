@@ -46,16 +46,16 @@ class ExpenseBucket {
   final List<Expense> expenses;
 
   double get totalExpenses {
-    // double sum = 0;
+    double sum = 0;
 
-    // for (final expense in expenses) {
-    //   sum += expense.amount;
-    // }
+    for (final expense in expenses) {
+      sum += expense.amount;
+    }
 
-    // return sum;
+    return sum;
 
-    return expenses
-        .map((e) => e.amount)
-        .reduce((value, element) => value + element);
+    // return expenses
+    //     .map((e) => e.amount)
+    //     .reduce((value, element) => value + element);
   }
 }
