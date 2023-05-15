@@ -8,8 +8,9 @@ const uuid = Uuid();
 
 enum Category {
   food(icon: Icons.lunch_dining),
-  travel(icon: Icons.flight_takeoff),
   leisure(icon: Icons.movie),
+  shopping(icon: Icons.shopping_bag),
+  travel(icon: Icons.flight_takeoff),
   work(icon: Icons.work);
 
   const Category({required this.icon});
